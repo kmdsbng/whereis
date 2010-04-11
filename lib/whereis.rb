@@ -1,8 +1,7 @@
 
 module Kernel
   def whereis(file)
-    path = whereis_sub(file)
-    File.expand_path(path)
+    File.expand_path(whereis_sub(file))
   end
 
   def whereis_sub(file)
