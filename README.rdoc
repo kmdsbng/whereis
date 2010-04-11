@@ -4,7 +4,7 @@ ruby whereis
 
 == Installation
 
-Write install rule here.
+rake install
 
 == Copyright
 
