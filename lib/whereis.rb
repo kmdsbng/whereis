@@ -14,7 +14,7 @@ module Kernel
     }
 
     $".each {|required|
-      return required if required =~ /#{file}.rb/ || required =~ /#{file}.so/
+      return required if required =~ /(^|\/)#{file}.rb/ || required =~ /(^|\/)#{file}.so/
     }
 
     raise "File not found \"#{file}\""
